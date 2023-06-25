@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import Alert from "./components/Alert";
+import ListGroup from "./components/ListGroup";
+import Button from "./components/Button";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  let items = ["New York", "Canada", "Zurich", "London", "Genava"];
 
+  const handleSelectItem = (item: string) => {
+    console.log(item);
+  };
+
+  const handleSelectItemIndex = (index: number) => {
+    console.log(index);
+  };
+  return <div className="container">
+    <Button children="" onClick={() => console.log("Clicked")} color="primary"></Button>
+    <Alert>Hello <span>World</span></Alert >
+    <ListGroup items={items} heading={"City"} onSelectItem={handleSelectItem} onSelectItemIndex={handleSelectItemIndex}></ListGroup>
+  </div>
+}
 export default App;
