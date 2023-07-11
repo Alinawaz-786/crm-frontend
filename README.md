@@ -1,7 +1,4 @@
-# Getting Started CRM frontend with Create React&TypeScript App 
-
-### `Node Version v16.18.0`
-### `NPM Version v8.19.2`
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
